@@ -1,0 +1,220 @@
+body{
+  background-color: rgb(34, 31, 31);
+}
+.content{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.container{
+  border: solid 1px black;
+  background-image: url('../images/spoky.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 26px;
+  height: 400px;
+  width: 80%;
+  padding: 30px 0 30px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 0;
+}
+
+.col-1{
+  border: solid 1px;
+  border-radius: 26px;
+  height: 26px;
+  width: 90%;
+  display: flex;
+  flex-direction: row;
+  padding: 13px 0 13px 0px;
+  justify-content: space-around;
+  transition: border-color 2s ease;
+}
+.col-1:hover {
+  border-color: red; /* Border color on hover */
+}
+.col-1-1{
+  border: solid 1px black;
+  background-color: rgb(34, 31, 31);
+  border-radius: 13px;
+  height: 26px;
+  width: 15%;
+  text-align: center;
+  text-decoration: none;
+  color: rgb(189, 189, 189);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.col-1-1b{
+  
+  border-radius: 13px;
+  height: 26px;
+  width: 40%;
+  text-align: center;
+  text-decoration: none;
+  color: rgb(189, 189, 189);
+  display: flex;
+  justify-content: center;
+}
+
+.col-1-1a{
+  height: 26px;
+  width: 30%;
+  text-align: center;
+  color: rgb(189, 189, 189);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.col-1-1a-1{
+  border: solid 1px black;
+  background-color: rgb(34, 31, 31);
+  color: rgb(189, 189, 189);
+  border-radius: 13px;
+  width: 30%;
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.col-2{
+  border: solid 1px;
+  height: 26px;
+  border-radius: 26px;
+  width: 90%;
+  padding: 13px 0 13px 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  transition: border-color 2s ease;
+}
+
+.col-2:hover {
+  border-color: red; /* Border color on hover */
+}
+.col-2-1{
+  border: solid 1px black;
+  background-color: rgb(34, 31, 31);
+  border-radius: 13px;
+  height: 26px;
+  width: 15%;
+  text-align: center;
+  text-decoration: none;
+  color: rgb(189, 189, 189);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+button, a{
+  cursor: pointer;
+}
+
+/* Hide the checkbox input */
+.dropdown-toggle {
+  display: none;
+}
+
+/* Dropdown container */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown button (label) */
+.dropdown-button {
+  background-color: rgb(34, 31, 31);
+  border-radius: 26px;
+  color: rgb(189, 189, 189);
+  font-size: 16px;
+  border: none;
+  width: auto;
+  height: auto;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Arrow styling */
+.arrow {
+  margin-left: 5px;
+  font-size: 12px;
+  transition: transform 0.3s ease;
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: rgb(34, 31, 31);
+   min-width: 100px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  border-radius: 10px;
+  z-index: 1;
+  top: 100%; /* Position below the button */
+  left: 70%;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: rgb(189, 189, 189);
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: black;
+}
+
+/* Show the dropdown content when the checkbox is checked */
+.dropdown-toggle:checked + .dropdown-button + .dropdown-content {
+  display: block;
+}
+
+/* Rotate the arrow when dropdown is active */
+.dropdown-toggle:checked + .dropdown-button .arrow {
+  transform: rotate(180deg); /* Rotate arrow when active */
+}
+
+/* Styles for the search container */
+.search-container {
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+}
+
+/* Styles for the form */
+form {
+  display: flex;
+  width: 100%;
+}
+
+/* Styles for the search input box */
+#search-box {
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 13px;
+  background-color: rgb(34, 31, 31);
+  color: rgb(189, 189, 189);
+  width: 100%; /* Adjust width as needed */
+}
+
+/* Optional: Focus style for the input box */
+#search-box:focus {
+  border-color: red;
+  outline: none;
+}
+
+
+
+

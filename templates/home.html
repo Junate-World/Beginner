@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+  <div class="content">
+    <div class="container">
+      <div class="col-1">
+        <div class="col-1-1b">
+          
+            <form action="/search" method="get">
+                <input type="text" id="search-box" name="query" placeholder="Search...">
+            </form>
+          
+        </div>
+        <div class="col-1-1a">
+        <a href="#" class="col-1-1a-1">About</a>
+        <a href="#" class="col-1-1a-1">Status</a>
+        <a href="#" class="col-1-1a-1">Settings</a>
+        </div>
+        <div class="col-1-1">
+          <div class="dropdown">
+            <!-- Hidden checkbox -->
+            <input type="checkbox" id="dropdown-toggle" class="dropdown-toggle">
+            <!-- Label acts as the button -->
+            <label for="dropdown-toggle" class="dropdown-button">
+                Menu
+                <span class="arrow">&#9660;</span> <!-- Downward arrow -->
+            </label>
+            <!-- Dropdown content -->
+            <div class="dropdown-content">
+                <a href="#">Option 1</a>
+                <a href="#">Option 2</a>
+                <a href="#">Option 3</a>
+            </div>
+        </div>
+      </div>
+    </div>
+      <div class="col-2">
+        <a href="#" class="col-2-1">Services</a>
+        <a href="#" class="col-2-1">Contact</a>
+        <a href="#" class="col-2-1">Database</a>
+        <a href="#" class="col-2-1">FAQ</a>
+               
+      </div>
+    
+  </div>
+  
+</div>
+<br>
+
+
+</body>
+</html>
